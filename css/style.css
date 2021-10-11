@@ -1,0 +1,33 @@
+.header-menu ul {
+  list-style: none;
+  margin: 0; 
+  padding-left: 0; 
+}
+.header-menu a {
+	text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+.header-menu {
+	background: radial-gradient(white 0%, white 70%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%) 0 -10px;
+}
+
+
+
+
+@font-face {
+  font-family: Roboto;
+  src: url('../vendor/Roboto/Roboto-Regular.ttf') format('truetype'); 
+}
+p, span, div, body, button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #18191f;
+  font-weight: bold;
+  font-family: Roboto;
+}
