@@ -10,4 +10,8 @@ $(document).ready(function() {
 		slidesToShow: 1, 
 		slidesToScroll: 1,
 	});
+
+	$('.header-menu-hamburger input').click(function() {
+    $('.header-menu-hamburger').next('.header-menu-list').slideToggle();
+  });	
 });

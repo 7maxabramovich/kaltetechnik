@@ -37,8 +37,8 @@
 <body>
   <header class="header container">
     <div class="row">
-      <div class="header-logo col-md-2"><a href="/"><img src="img/logo.png"></a></div>
-      <nav class="header-menu col-md-10">
+      <div class="header-logo col-xs-2"><a href="/"><img src="img/logo.png"></a></div>
+      <nav class="header-menu col-xs-10">
         <div class="header-menu-wrap-desktop">
           <ul class="header-menu-list">
             <li class="header-menu-item">Über Uns</li>
@@ -50,9 +50,27 @@
             <li class="header-menu-item">Presse</li>
           </ul>
         </div>
-        <div class="header-menu-wrap-tablet">
-        </div>
         <div class="header-menu-wrap-mobile">
+          <div class="header-menu-hamburger">
+            <input type="checkbox" id="checkbox" class="checkbox visuallyHidden">
+            <label for="checkbox">
+              <div class="hamburger">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+              </div>
+            </label>
+          </div>
+          <ul class="header-menu-list">
+            <li class="header-menu-item">Über Uns</li>
+            <li class="header-menu-item header-menu-item-parent">Produkte</li>
+            <li class="header-menu-item header-menu-item-parent">Peripherietechnik</li>
+            <li class="header-menu-item header-menu-item-parent">Dienstleistungen</li>
+            <li class="header-menu-item">Klimatechnik</li>
+            <li class="header-menu-item">Kontakt</li>
+            <li class="header-menu-item">Presse</li>
+          </ul>
         </div>
       </nav>
     </div>
@@ -61,12 +79,10 @@
   <main class="main">
     <div class="preview container">
       <div class="row preview-row">
-        <div class="col-md-6">
-          <h1 class="h1">Luftkondensierte Kältemaschinen & Kaltwassersätze</h1>
-          <p class="preview-item preview-item-decoration">Aufgrund der kompakten Bauart werden platzsparende luftkondensierte Kompressionskältemaschinen (umgangsspr. „Kaltwassersätze“) vielseitig zur Prozesskühlung und Gebäudeklimatisierung eingesetzt.</p>
-        </div>
-        <div class="col-md-6">
-          <img class="preview-item-img" alt="img" src="img/preview-1.png">
+        <div class="col-md-12">
+          <div class="h1-wrap"><h1 class="h1">Luftkondensierte Kältemaschinen & Kaltwassersätze</h1></div>
+          <div class="preview-item-img-wrap"><img class="preview-item-img" alt="img" src="img/preview-1.png"></div>
+          <div class="preview-item-decoration-wrap"><p class="preview-item preview-item-decoration">Aufgrund der kompakten Bauart werden platzsparende luftkondensierte Kompressionskältemaschinen (umgangsspr. „Kaltwassersätze“) vielseitig zur Prozesskühlung und Gebäudeklimatisierung eingesetzt.</p></div>
         </div>
       </div>
       <div class="row">
@@ -87,23 +103,22 @@
       <div class="col-lg-8 col8">
         <div class="modern">
           <h3 class="h3">MODERNSTE STANDARDS</h3>        
-          <p class="preview-item">Aktuelle Richtlinien und Verordnungen bezüglich des Kältemittel Phase-Downs müssen berücksichtigt werden. Der langfristige Einsatz des Kältemittels muss sowohl nach ökonomischen als auch strategischen Gesichtspunkten entschieden werden.</p>
-          <p class="preview-item">Alle unsere Kältemaschinen entsprechen dem modernsten Stand der Technik und werden in den unterschiedlichsten Branchen eingesetzt. Unser Angebot umfasst ein breites Sortiment an natürlichen und frigenen Kältemitteln, die den aktuellsten Normen und Verordnungen entsprechen.</p>
+          <p class="preview-item">Aktuelle Richtlinien und Verordnungen bezüglich des <span class="bold">Kältemittel Phase-Downs</span> müssen berücksichtigt werden. Der langfristige Einsatz des Kältemittels muss sowohl nach ökonomischen als auch strategischen Gesichtspunkten entschieden werden.</p>
+          <p class="preview-item">Alle unsere Kältemaschinen entsprechen dem modernsten Stand der Technik und werden in den unterschiedlichsten Branchen eingesetzt. Unser Angebot umfasst ein <span class="bold">breites Sortiment an natürlichen und frigenen Kältemitteln</span>, die den aktuellsten Normen und Verordnungen entsprechen.</p>
         </div>
       </div>
     </div>
 
-    <div class="row row1">
+    <div class="row row1 row2">
       <div class="col-md-6 unsere-wrap">
         <div class="unsere">
           <h4 class="h4">Unsere Spezialität besteht aus unseren Kaltwassersätzen mit integrierter Freikühleinheit.</h4>        
           <p class="preview-item">Doppelkanal Mikrochannel Wärmetauscher kühlen das Prozesswasser energiesparend über ambiente Umgebungsluft.</p>
-          <p class="preview-item">Nur bei heißen Außentemperaturen erfolgt die Umschaltung auf Kompressionskälteerzeugung. Diese Maximierung der Freikühlzeit erzielt größtmögliche Kosteneinsparungen </p>
-          <p class="preview-item">auch bei kleinen Nennleistungen.</p>
+          <p class="preview-item">Nur bei heißen Außentemperaturen erfolgt die Umschaltung auf Kompressionskälteerzeugung. Diese Maximierung der Freikühlzeit erzielt größtmögliche Kosteneinsparungen auch bei kleinen Nennleistungen.</p>
         </div>
       </div>
       <div class="col-md-6 unsere-img">
-        <img class="row-item-img" src="img/gradient.png">
+        <img class="row-item-img row-item-img1" src="img/gradient.png">
       </div>
     </div>
 
@@ -117,18 +132,18 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-4 icon-wrap">
+        <div class="col-md-4 col-sm-6 icon-wrap">
           <div class="icon-1">Geringe Stellfläche</div>
           <div class="icon-2">Für Außen- und Innenaufstellung erhältlich</div>
           <div class="icon-3">Robustes Gehäuse für Außenaufstellung</div>
           <div class="icon-4">Erhöhte Betriebssicherheit</div>
         </div>
-        <div class="col-md-4 icon-wrap">
+        <div class="col-md-4 col-sm-6 icon-wrap">
           <div class="icon-5">Mit und ohne integrierter Freikühlung</div>
           <div class="icon-6">Betriebsbereit bei Anlieferung</div>
           <div class="icon-7">Geringe Schallemissionen</div>
         </div>
-        <div class="col-md-4 icon-wrap">
+        <div class="col-md-4 col-sm-6 icon-wrap">
           <div class="icon-8">Für Außentemperaturen bis +55°C</div>
           <div class="icon-9">Automatische Freikühlschaltung für verringerten Energieverbrauch</div>
           <div class="icon-10">Wetterfest und Langlebig</div>
@@ -146,24 +161,24 @@
 
     <div class="container">
       <div class="row list">
-        <div class="col-md-6">
-          <p>① 25 verschiedene Modelle von 6 kW bis 600 kW Kühlleistung</p>
-          <p>② Volumenströme von 1,5 m³/h bis 140 m³/h</p>
-          <p>③ Auswahl aus 50 verschiedenen Prozesspumpen im Hochflussund Hochdruckbereich</p>
-          <p>④ Kompakteinheiten mit integrierten Pumpen, Drucktanks, Filtern, Steuerungen (optional mit Reservepumpe)</p>
-          <p>⑤ Mikrochannel Verflüssiger für höchste Energieeffizienz</p>
-          <p>⑥ Mit optionalen Kompressor Schallschutzummantelungen</p>
-          <p>⑦ Schallmindernde Ventilatortechnik erhältlich</p>
-        </div>
-        <div class="col-md-6">
-          <p>⑧ Scroll, Multiscroll und Schraubenkompressoren (optional mit Frequenzumrichter) erhältlich</p> 
-          <p>⑨ Automatische Leistungssteuerung für Prozesse mit variabler Kühllast</p>
-          <p>⑩ Kleine Kältemittelvolumen dank extrakompakter Bauweise</p>
-          <p>⑪ Auswahl aus verschiedenen Low-GWP Kältemitteln, u.a. R513a, R1234ze und R290 (Propan)</p>
-          <p>⑫ Mit automatischen Glykol Nachfüllsystemem</p>
-          <p>⑬ Mit Remote HMI</p>
-          <p>⑭ Erhöhte Betriebssicherheit mit bis zu 4 Kühlkreisläufen pro Maschine</p>
-        </div>
+        <ol class="col-md-6">
+          <li>25 verschiedene Modelle von <span class="bold">6 kW bis 600 kW</span> Kühlleistung</li>
+          <li>Volumenströme von <span class="bold">1,5 m³/h bis 140 m³/h</span></li>
+          <li>Auswahl aus <span class="bold">50 verschiedenen Prozesspumpen</span> im Hochflussund Hochdruckbereich</li>
+          <li>Kompakteinheiten mit <span class="bold">integrierten Pumpen, Drucktanks, Filtern, Steuerungen</span> (optional mit Reservepumpe)</li>
+          <li><span class="bold">Mikrochannel Verflüssiger</span> für höchste Energieeffizienz</li>
+          <li>Mit optionalen <span class="bold">Kompressor Schallschutzummantelungen</span></li>
+          <li><span class="bold">Schallmindernde Ventilatortechnik</span> erhältlich</li>
+        </ol>
+        <ol class="col-md-6 ol-reset">
+          <li><span class="bold">Scroll, Multiscroll</span> und <span class="bold">Schraubenkompressoren</span> (optional mit Frequenzumrichter) erhältlich</li> 
+          <li><span class="bold">Automatische Leistungssteuerung</span> für Prozesse mit variabler Kühllast</li>
+          <li><span class="bold">Kleine Kältemittelvolumen</span> dank extrakompakter Bauweise</li>
+          <li>Auswahl aus <span class="bold">verschiedenen Low-GWP Kältemitteln, u.a. R513a, R1234ze und R290 (Propan)</span></li>
+          <li>Mit <span class="bold">automatischen Glykol Nachfüllsystemem</span></li>
+          <li>Mit <span class="bold">Remote HMI</span></li>
+          <li><span class="bold">Erhöhte Betriebssicherheit mit bis zu 4 Kühlkreisläufen</span> pro Maschine</li>
+        </ol>
       </div>
     </div>     
     
@@ -195,15 +210,15 @@
 
     <div class="container">
       <div class="row besucher">
-        <div class="col-md-4">
+        <div class="col-xs-4">
           <div>GLYKOLWANNEN</div>
           <div>Wärmemengenmessungen</div>
         </div>
-        <div class="col-md-4">
+        <div class="col-xs-4">
           <div>WASSERAUFBEREITUNG</div>
           <div>ANLAGELEASING</div>
         </div>
-        <div class="col-md-4">
+        <div class="col-xs-4">
           <div>ROHRLEITUNGSBAU</div>
         </div>
       </div>
@@ -213,15 +228,17 @@
   <footer class="footer">
     <div class="container">
       <div class="row footer-jetzt">
-        <div class="col-md-5">
-          <h2 class="h2">Jetzt Termin vereinbaren!</h2>
-        </div>
-        <div class="col-md-4">
-          <p class="">Gerne stehen wir Ihnen für eine individuelle Beratung telefonisch und vor Ort zur Verfügung und freuen uns über Ihre Kontaktaufnahme. Sprechen Sie uns an!</p>
-          <p class="">Fragen Sie nach einem Rückruf oder kontaktieren Sie uns unter: <a href="mailto:info@elsasser-technik.de">info@elsasser-technik.de</a></p>
-        </div>
         <div class="col-md-3">
           <div><a href="/"><img class="footer-logo" src="img/logo.png"></a></div>
+        </div>
+        <div class="col-md-9 footer-jetzt-flex">
+          <div class="col-md-6">
+            <h2 class="h2">Jetzt Termin vereinbaren!</h2>
+          </div>
+          <div class="col-md-6">
+            <p class="preview-item">Gerne stehen wir Ihnen für eine individuelle Beratung telefonisch und vor Ort zur Verfügung und freuen uns über Ihre Kontaktaufnahme. Sprechen Sie uns an!</p>
+            <p class="preview-item">Fragen Sie nach einem Rückruf oder kontaktieren Sie uns unter: <a href="mailto:info@elsasser-technik.de">info@elsasser-technik.de</a></p>
+          </div>
         </div>
       </div>
     </div>   
@@ -234,28 +251,30 @@
       </div>  
     </div>  
 
-    <div class="container">
-      <div class="row footer-info">
-        <div class="col-md-3">
-          <p>Elsässer Kältetechnik</p>
-          <address>Königsallee 14<br>40212 Düsseldorf</address>
-        </div>
-        <div class="col-md-4">
-          <p>Kontakt</p>
-          <p>Telefon: <a href="tel:+49 (0) 211 9232 3052">+49 (0) 211 9232 3052</a></p>
-          <p>E-Mail: <a href="mailto:info@elsasser-technik.de">info@elsasser-technik.de</a></p>
-        </div>
-        <div class="col-md-3">
-          <p>Shortlinks</p>
-          <p>Kontakt</p>
-          <p>Rückruf vereinbaren</p>
-        </div>
-        <div class="col-md-2">
-          <p>Impressum</p>
-          <p>Datenschutz</p>
-        </div>
+    <nav class="nav-footer">
+      <div class="container">
+        <div class="row footer-info">
+          <div class="col-md-3">
+            <p><span class="bold">Elsässer Kältetechnik</span></p>
+            <address>Königsallee 14<br>40212 Düsseldorf</address>
+          </div>
+          <div class="col-md-4">
+            <p><span class="bold">Kontakt</span></p>
+            <p>Telefon: <a href="tel:+49 (0) 211 9232 3052">+49 (0) 211 9232 3052</a></p>
+            <p>E-Mail: <a href="mailto:info@elsasser-technik.de">info@elsasser-technik.de</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span class="bold">Shortlinks</span></p>
+            <p><a href="#">Kontakt</a></p>
+            <p><a href="#">Rückruf vereinbaren</a></p>
+          </div>
+          <div class="col-md-2">
+            <p><a href="#">Impressum</a></p>
+            <p><a href="#">Datenschutz</a></p>
+          </div>
+        </div>  
       </div>  
-    </div>  
+    </nav>
   </footer>
 </body>
 </html>
