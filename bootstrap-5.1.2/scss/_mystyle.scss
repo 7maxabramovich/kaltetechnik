@@ -1,13 +1,5 @@
 @import "variables1";
 
-$good1: #0f0 !default;
-
-$theme-colors: (
-	"good1": $good1
-) !default;
-
-
-
 
 @mixin flex-block-space-between {
 	display: flex;
@@ -21,15 +13,15 @@ $theme-colors: (
 	padding-left: $grid-gap-side;
 	padding-right: $grid-gap-side;
 }
+
 @mixin row {
 	@include flex-block-space-between;
 	margin-left: -$grid-gap-side;
 	margin-right: -$grid-gap-side;
-
 	> * {
 		width: 100%;
 		max-width: 100%;
-		margin-top: $grid-gap-side;
+		margin-top: $grid-gap;
 		margin-left: $grid-gap-side;
 		margin-right: $grid-gap-side;
 	}
@@ -73,10 +65,17 @@ body .container {
 	}
 }
 
+p, span, div, a, li, address {
+	font-family: $Noto;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $BBC;
+}
+
 
 .header-menu-list {
 	@include flex-block-space-between;
-    list-style: none;
+	list-style: none;
 }
 @media (max-width: 991px) {
 	.header-menu-list {
@@ -89,7 +88,7 @@ body .container {
 	margin: 0 5px;
 }
 .header-menu-item:hover {
-	color: #2E75FF;
+	color: $color-link;
 }
 .header-menu-item-parent {
 	position: relative;
@@ -103,8 +102,6 @@ body .container {
 		font-size: 26px;
 	}
 }
-
-
 
 .header-menu-wrap-mobile {
 	display: none;		
@@ -129,20 +126,18 @@ body .container {
 	z-index: 2;
 }
 
-.header-menu-wrap-mobile .header-menu-list {
+.header-menu-wrap-mobile .header-mobile-menu-list {
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1;
 	display: none;
 	overflow: hidden;
-	width: 100%;
-	height: 100%;
 	background: #fff;
 }
 
 .header-menu-wrap-mobile .header-menu-item {
-	margin: 15px 5px;
+	margin: $grid-gap-side 5px;
 }
 
 .header-menu-wrap-mobile .header-menu-item-parent {
@@ -150,7 +145,6 @@ body .container {
 		right: 10px;
 	}
 }
-
 
 .visuallyHidden {
 	width: 1px; 
@@ -213,7 +207,6 @@ body .container {
 }
 
 
-
 .preview-row {
 	align-items: center;
 }
@@ -224,7 +217,6 @@ body .container {
 
 .row .h1 {
 	position: relative;
-	margin-top: 50px;
 	padding-bottom: 50px;
 	font-family: $BBC;
 	font-weight: bold;
@@ -251,10 +243,6 @@ body .container {
 	}
 }
 
-p {
-	font-family: $Noto;
-}
-
 .preview-item {
 	font-family: $Noto;
 	font-size: $font-p;
@@ -277,10 +265,6 @@ p {
 		height: 7px;
 		background: #EDEFF3;
 	}
-}
-.preview-item-img {
-	max-width: 100%;
-	width: 100%;
 }
 
 @media (max-width: 575px) {
@@ -307,7 +291,7 @@ p {
 	font-size: 20px;
 	line-height: 40px;
 	letter-spacing: 2.42px;
-	color: #1652AC;
+	color: $color-h;
 }
 
 @media (max-width: 575px) {
@@ -320,9 +304,6 @@ p {
 	font-weight: bold;
 }
 .row-item-img {
-	max-width: 100%;
-	width: 100%;
-	height: 100%;
 	object-fit: cover;
 }
 
@@ -354,12 +335,9 @@ p {
 	}
 }
 .col8 * {
-	color: #FBFDFF;
+	color: $color-bej;
 }
 
-.row2 {
-	margin-top: 50px;
-}
 .unsere-wrap {
 	display: flex;
 	align-items: baseline;
@@ -377,7 +355,7 @@ p {
 	font-size: 20px;
 	line-height: 40px;
 	letter-spacing: 2.42px;
-	color: #1652AC;
+	color: $color-h;
 	text-transform: uppercase;
 }
 .unsere-img {
@@ -387,7 +365,6 @@ p {
 @media (max-width: 575px) {
 	.row2 {
 		display: grid;
-		margin-top: 0;
 	}
   .row2 .col-md-6:nth-child(2) {
     grid-row-start: 1;
@@ -408,10 +385,10 @@ p {
 	.unsere-img {
 		overflow: hidden;
 	}	
-	.row-item-img1 {
-		width: 120%;
+	.row .row-item-img1 {
+		width: 120% !important;
 		margin-left: -68px;
-		max-width: initial;
+		max-width: initial !important;
 	}
 }
 
@@ -423,7 +400,7 @@ p {
 
 @media (max-width: 575px) {
 	.row .h5 {
-		margin-top: 30px;
+		margin-top: $grid-gap;
 	}
 }
 
@@ -475,8 +452,6 @@ p {
 .row .h6 {
 	text-align: center;
 	font-size: 28px;
-	padding-bottom: 10px;
-	margin-top: 40px;
 }
 .list ol {
 	list-style: none;
@@ -520,7 +495,7 @@ p {
 	bottom: -50px;
 	top: inherit;
 	&:before {
-		color: rgba(0, 69, 203, 0.8);
+		color: $color-link;
 		font-size: 40px;
 	}
 }
@@ -540,16 +515,16 @@ p {
 	font-size: 10px;
 }
 .slick-dots li.slick-active button:before {
-	color: #004FC7;
+	color: $color-link;
 }
 
 .title {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: $grid-gap;
 }
 
 .besucher {
-	margin-top: 30px;	
+	margin-top: $grid-gap;	
 }
 @media (max-width: 991px) {
 	.besucher {
@@ -557,7 +532,7 @@ p {
 	}
 }
 .besucher .col-xs-4 {
-	min-width: 230px;
+	min-width: 245px;
 	margin-top: -10px;
 }
 
@@ -567,7 +542,7 @@ p {
 	padding: 10px;
 	width: 100%;
 	text-align: center;
-	color: #FAFBFE;
+	color: $color-bej;
 	border-radius: 10px;
 	margin: 10px auto;
 }
@@ -586,8 +561,8 @@ p {
 .footer-logo {
 	filter: grayscale(1);
 	display: block;
-	margin: auto;
 	opacity: 0.5;
+	width: 150px;
 }
 .footer-jetzt-flex {
 	display: flex;
@@ -604,16 +579,15 @@ p {
 	padding: 10px;
 	width: 200px;
 	text-align: center;
-	color: #FAFBFE;
+	color: $color-bej;
 	border-radius: 10px;
-	margin: 10px auto;
 }
 .footer-info a {
 	color: initial;
 }
 .footer-info a[href^="tel"],
 .footer-info a[href^="mailto"] {
-	color: #0d6efd;
+	color: $color-link;
 }
 address {
 	margin-bottom: auto;

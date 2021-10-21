@@ -12,6 +12,6 @@ $(document).ready(function() {
 	});
 
 	$('.header-menu-hamburger input').click(function() {
-    $('.header-menu-hamburger').next('.header-menu-list').slideToggle();
+    $('.header-menu-hamburger').next('.header-mobile-menu-list').slideToggle();
   });	
 });
